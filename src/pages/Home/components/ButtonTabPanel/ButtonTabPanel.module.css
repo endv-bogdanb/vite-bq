@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  gap: var(--bq-spacing-m);
+  align-items: center;
+}
+
+.custom {
+  --bq-button--medium-paddingY: var(--bq-spacing-xl);
+  --bq-button--medium-paddingX: var(--bq-spacing-xl);
+}
+
+.custom::part(button) {
+  background-color: var(--bq-corai-500);
+  text-transform: capitalize;
+}
+
+.custom::part(button):hover {
+  background-color: var(--bq-corai-600);
+}
+
+.custom::part(button):active {
+  background-color: var(--bq-corai-500);
+}
