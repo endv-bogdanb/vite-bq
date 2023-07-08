@@ -15,5 +15,12 @@ export function useBoolean(defaultValue = false) {
     setValue((draft) => !draft);
   }, [setValue]);
 
-  return [value, { off, on, toggle }] as const;
+  const set = useCallback(
+    (value: boolean) => {
+      setValue(value);
+    },
+    [setValue],
+  );
+
+  return [value, { off, on, set, toggle }] as const;
 }
