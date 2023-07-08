@@ -7,18 +7,18 @@ export const ROUTES = [
     component: Home,
     icon: "package",
     name: "Home",
-    path: "/",
+    path: "/vite-bq/",
   },
   {
     component: Dialog,
     icon: "picture-in-picture",
     name: "Dialog",
-    path: "/dialog",
+    path: "/vite-bq/dialog",
   },
   {
     component: Notification,
     icon: "notification",
     name: "Notification",
-    path: "/notitification",
+    path: "/vite-bq/notitification",
   },
 ] as const;
