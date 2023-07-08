@@ -8,7 +8,15 @@ export const copySvgPlugin: () => PluginOption = () => ({
     const weight = ["thin", "light", "regular", "bold", "fill", "duotone"];
 
     // NOTE: copy only svgs that are used in project
-    const svgs = ["package", "info", "x"];
+    const svgs = [
+      "package",
+      "info",
+      "x",
+      "notification",
+      "x-circle",
+      "check-circle",
+      "warning-circle",
+    ];
 
     await Promise.all(
       svgs
