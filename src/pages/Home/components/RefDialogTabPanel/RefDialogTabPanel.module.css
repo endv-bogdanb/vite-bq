@@ -1,0 +1,15 @@
+.dialogTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--bq-spacing-s);
+}
+
+.undoneAction {
+  font-size: var(--bq-font-size--s);
+  color: var(--bq-grey-600);
+}
+
+.footer {
+  display: flex;
+  gap: var(--bq-spacing-xs);
+}
