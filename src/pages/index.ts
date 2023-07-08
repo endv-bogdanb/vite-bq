@@ -1,3 +1,4 @@
+import { Dialog } from "./Dialog";
 import { Home } from "./Home";
 import { Notification } from "./Notification";
 
@@ -7,6 +8,12 @@ export const ROUTES = [
     icon: "package",
     name: "Home",
     path: "/",
+  },
+  {
+    component: Dialog,
+    icon: "picture-in-picture",
+    name: "Dialog",
+    path: "/dialog",
   },
   {
     component: Notification,

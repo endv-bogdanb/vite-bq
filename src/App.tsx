@@ -16,7 +16,6 @@ export const App: FC = () => {
             />
           ))}
         </Switch>
-        {/* <Home /> */}
       </SideLayout>
     </StrictMode>
   );
