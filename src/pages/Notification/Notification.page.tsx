@@ -4,6 +4,7 @@ import { TabPanel } from "@/components";
 import {
   CreateElementNotificationTabPanel,
   PortalNotificationTabPanel,
+  PortalToastTabPanel,
 } from "./components";
 
 export const Notification: FC = () => {
@@ -23,12 +24,18 @@ export const Notification: FC = () => {
         <BqTab tabId="create-element-notification" controls={""}>
           Create element notification
         </BqTab>
+        <BqTab tabId="portal-toast" controls={""}>
+          Portal toast
+        </BqTab>
       </BqTabGroup>
       <TabPanel activeTabId={activeTabId} tabId="portal-notification">
         <PortalNotificationTabPanel />
       </TabPanel>
       <TabPanel activeTabId={activeTabId} tabId="create-element-notification">
         <CreateElementNotificationTabPanel />
+      </TabPanel>
+      <TabPanel activeTabId={activeTabId} tabId="portal-toast">
+        <PortalToastTabPanel />
       </TabPanel>
     </>
   );

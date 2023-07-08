@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--bq-spacing-m);
+}
+
+.select {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--bq-spacing-xs);
+}
