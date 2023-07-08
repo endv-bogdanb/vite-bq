@@ -1,6 +1,8 @@
 import { type FC, type ReactNode } from "react";
-import { BqIcon, BqSideMenu, BqSideMenuItem } from "@bee-q/react";
+import { BqSideMenu } from "@bee-q/react";
 import { useAppVersion } from "@/hooks";
+import { ROUTES } from "@/pages";
+import { SideLayoutItem } from "./components";
 
 export interface SideLayoutProps {
   children: ReactNode;
@@ -13,10 +15,9 @@ export const SideLayout: FC<SideLayoutProps> = ({ children }) => {
     <>
       <BqSideMenu>
         <h1 slot="logo">{appVersion}</h1>
-        <BqSideMenuItem active>
-          <BqIcon name="package" slot="prefix" />
-          Home
-        </BqSideMenuItem>
+        {ROUTES.map((route) => (
+          <SideLayoutItem key={route.path} route={route} />
+        ))}
       </BqSideMenu>
       {children}
     </>
