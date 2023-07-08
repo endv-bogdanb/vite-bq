@@ -7,7 +7,8 @@ export function useAppVersion() {
     const abortController = new AbortController();
 
     (async function (signal: AbortSignal) {
-      fetch("/version.txt", { signal })
+      const url = new URL("version.txt", window.location.href);
+      fetch(url, { signal })
         .then((response) => {
           if (response.ok) {
             return response.text();
