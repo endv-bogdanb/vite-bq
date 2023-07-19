@@ -1,4 +1,5 @@
 import { Dialog } from "./Dialog";
+import { Form } from "./Form";
 import { Home } from "./Home";
 import { Notification } from "./Notification";
 
@@ -20,5 +21,11 @@ export const ROUTES = [
     icon: "notification",
     name: "Notification",
     path: "/vite-bq/notitification",
+  },
+  {
+    component: Form,
+    icon: "keyboard",
+    name: "Form",
+    path: "/vite-bq/form",
   },
 ] as const;

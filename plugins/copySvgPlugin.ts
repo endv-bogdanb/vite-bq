@@ -19,6 +19,7 @@ export const copySvgPlugin: () => PluginOption = () => ({
       "picture-in-picture",
       "spinner-gap",
       "warning",
+      "keyboard",
     ];
 
     await Promise.all(
