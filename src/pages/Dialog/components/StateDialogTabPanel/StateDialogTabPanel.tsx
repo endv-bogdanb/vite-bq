@@ -1,11 +1,10 @@
 import { type FC } from "react";
-import { BqButton, BqCheckbox, BqDialog, BqIcon } from "@bee-q/react";
+import { BqButton, BqDialog, BqIcon } from "@bee-q/react";
 import { useBoolean } from "@/hooks";
 import classes from "./StateDialogTabPanel.module.css";
 
 export const StateDialogTabPanel: FC = () => {
   const [open, { off: hide, on: show }] = useBoolean();
-  const [preventDefault, { set }] = useBoolean(true);
 
   return (
     <>
@@ -19,26 +18,14 @@ export const StateDialogTabPanel: FC = () => {
       >
         Deactive account
       </BqButton>
-      <div>
-        <BqCheckbox
-          checked={preventDefault}
-          onBqChange={(event) => set(event.detail.checked)}
-          name={""}
-          value={""}
-        >
-          Prevent default
-        </BqCheckbox>
-      </div>
       <BqDialog
         open={open}
         size="medium"
         footerApperance="standard"
-        onBqClose={(e) => {
-          preventDefault && e.preventDefault();
+        onBqClose={() => {
           hide();
         }}
-        onBqCancel={(e) => {
-          preventDefault && e.preventDefault();
+        onBqCancel={() => {
           hide();
         }}
       >
