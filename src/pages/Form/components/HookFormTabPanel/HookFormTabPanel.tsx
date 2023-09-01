@@ -1,11 +1,12 @@
 import { type FC } from "react";
 import { useForm } from "react-hook-form";
-import { BqButton } from "@bee-q/react";
-import { FormStateDisplay, InputField } from "./components";
+import { BqButton, BqOption } from "@bee-q/react";
+import { FormStateDisplay, InputField, SelectField } from "./components";
 import classes from "./HookFormTabPanel.module.css";
 
 interface User {
   confirmPassword: string;
+  gender: "Male" | "Female" | "Rather not say";
   name: string;
   password: string;
 }
@@ -55,6 +56,16 @@ export const HookFormTabPanel: FC = () => {
           }}
           disableClear
         />
+        <SelectField
+          control={control}
+          name="gender"
+          label="Gender"
+          rules={{ required: "Required" }}
+        >
+          <BqOption value="Male">Male</BqOption>
+          <BqOption value="Female">Female</BqOption>
+          <BqOption value="Rather not say">Rather not say</BqOption>
+        </SelectField>
         <BqButton type="submit">Register</BqButton>
       </form>
       <FormStateDisplay
