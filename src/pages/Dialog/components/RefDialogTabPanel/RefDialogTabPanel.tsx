@@ -25,7 +25,7 @@ export const RefDialogTabPanel: FC = () => {
       >
         Deactive account
       </BqButton>
-      <BqDialog ref={ref} size="medium" footerApperance="standard">
+      <BqDialog ref={ref} size="medium" footerAppearance="standard">
         <h3 className={classes.dialogTitle} slot="title">
           <BqIcon
             name="info"
