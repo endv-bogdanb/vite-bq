@@ -21,7 +21,7 @@ export const StateDialogTabPanel: FC = () => {
       <BqDialog
         open={open}
         size="medium"
-        footerApperance="standard"
+        footerAppearance="standard"
         onBqClose={() => {
           hide();
         }}
