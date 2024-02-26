@@ -1,0 +1,4 @@
+/*!
+ * Built by Endavans
+ * © https://beeq.design - Apache 2 License.
+ */async function f(t,s=null){t.classList.remove("hidden"),await l("enter",t,s)}async function w(t,s=null){await l("leave",t,s),t.classList.add("hidden")}async function l(t,s,i){const a=s.dataset,o=i?`${i}-${t}`:t;let n=`transition${t.charAt(0).toUpperCase()+t.slice(1)}`;const c=a[n]?a[n].split(" "):[o],u=a[`${n}Start`]?a[`${n}Start`].split(" "):[`${o}-start`],d=a[`${n}End`]?a[`${n}End`].split(" "):[`${o}-end`];r(s,c),r(s,u),await p(),e(s,u),r(s,d),await $(s),e(s,d),e(s,c)}function r(t,s){t.classList.add(...s)}function e(t,s){t.classList.remove(...s)}function p(){return new Promise(t=>{requestAnimationFrame(()=>{requestAnimationFrame(t)})})}function $(t){return new Promise(s=>{const i=getComputedStyle(t).transitionDuration.split(",")[0],a=Number(i.replace("s",""))*1e3;setTimeout(()=>{s()},a)})}export{f as e,w as l};
