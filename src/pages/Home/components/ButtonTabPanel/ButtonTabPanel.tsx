@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqButton } from "@bee-q/react";
+import { BqButton } from "@beeq/react";
 import classes from "./ButtonTabPanel.module.css";
 
 export const ButtonTabPanel: FC = () => {

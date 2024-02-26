@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqButton, BqNotification } from "@bee-q/react";
+import { BqButton, BqNotification } from "@beeq/react";
 import { NotificationPortal } from "./components";
 import { useNotification } from "./utils";
 

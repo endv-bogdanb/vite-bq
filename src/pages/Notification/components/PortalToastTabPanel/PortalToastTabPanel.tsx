@@ -1,6 +1,6 @@
 import { type FC, useState } from "react";
-import { type TToastPlacement } from "@bee-q/core";
-import { BqButton, BqToast } from "@bee-q/react";
+import { type TToastPlacement } from "@beeq/core";
+import { BqButton, BqToast } from "@beeq/react";
 import { ToastPortal } from "./components";
 import classes from "./PortalToastTabPanel.module.css";
 import { PLACEMENTS, useToast } from "./utils";

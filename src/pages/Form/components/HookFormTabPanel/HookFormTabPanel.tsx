@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import { useForm } from "react-hook-form";
-import { BqButton, BqOption } from "@bee-q/react";
+import { BqButton, BqOption } from "@beeq/react";
 import { FormStateDisplay, InputField, SelectField } from "./components";
 import classes from "./HookFormTabPanel.module.css";
 

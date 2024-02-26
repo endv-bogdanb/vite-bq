@@ -5,8 +5,8 @@ import {
   useController,
   type UseControllerProps,
 } from "react-hook-form";
-import { type JSX } from "@bee-q/core";
-import { BqSelect } from "@bee-q/react";
+import { type JSX } from "@beeq/core";
+import { BqSelect } from "@beeq/react";
 
 export interface SelectFieldProps<
   TFieldValues extends FieldValues,

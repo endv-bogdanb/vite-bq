@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqIcon, BqSideMenuItem } from "@bee-q/react";
+import { BqIcon, BqSideMenuItem } from "@beeq/react";
 import { Link, useRoute } from "wouter";
 import { type ROUTES } from "@/pages";
 

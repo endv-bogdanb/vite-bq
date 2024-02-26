@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqBreadcrumb, BqBreadcrumbItem, BqIcon } from "@bee-q/react";
+import { BqBreadcrumb, BqBreadcrumbItem, BqIcon } from "@beeq/react";
 import { Link } from "wouter";
 import { ROUTES } from "@/pages";
 

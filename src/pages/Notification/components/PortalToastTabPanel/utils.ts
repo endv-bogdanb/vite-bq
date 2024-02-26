@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { type TToastPlacement } from "@bee-q/core";
+import { type TToastPlacement } from "@beeq/core";
 
 export const PLACEMENTS: TToastPlacement[] = [
   "top-center",

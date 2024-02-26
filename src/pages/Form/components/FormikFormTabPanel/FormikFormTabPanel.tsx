@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqButton, BqInput, BqOption, BqSelect } from "@bee-q/react";
+import { BqButton, BqInput, BqOption, BqSelect } from "@beeq/react";
 import { type FormikErrors, useFormik } from "formik";
 import { FormStateDisplay } from "./components";
 import classes from "./FormikFormTabPanel.module.css";
