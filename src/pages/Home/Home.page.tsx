@@ -1,5 +1,5 @@
 import { type FC, useState } from "react";
-import { BqTab, BqTabGroup } from "@bee-q/react";
+import { BqTab, BqTabGroup } from "@beeq/react";
 import { TabPanel } from "@/components";
 import { BreadcrumbsTabPanel, ButtonTabPanel } from "./components";
 

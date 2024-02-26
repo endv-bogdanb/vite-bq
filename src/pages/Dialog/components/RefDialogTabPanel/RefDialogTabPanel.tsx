@@ -1,5 +1,5 @@
 import { type FC, useCallback, useRef } from "react";
-import { BqButton, BqDialog, BqIcon } from "@bee-q/react";
+import { BqButton, BqDialog, BqIcon } from "@beeq/react";
 import classes from "./RefDialogTabPanel.module.css";
 
 export const RefDialogTabPanel: FC = () => {

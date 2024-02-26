@@ -1,5 +1,5 @@
 import { type FC, type ReactNode } from "react";
-import { BqSideMenu } from "@bee-q/react";
+import { BqSideMenu } from "@beeq/react";
 import { useAppVersion } from "@/hooks";
 import { ROUTES } from "@/pages";
 import { SideLayoutItem } from "./components";

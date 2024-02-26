@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqButton, BqDialog, BqIcon } from "@bee-q/react";
+import { BqButton, BqDialog, BqIcon } from "@beeq/react";
 import { useBoolean } from "@/hooks";
 import classes from "./StateDialogTabPanel.module.css";
 

@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { BqButton } from "@bee-q/react";
+import { BqButton } from "@beeq/react";
 import { notify } from "./utils";
 
 export const CreateElementNotificationTabPanel: FC = () => {

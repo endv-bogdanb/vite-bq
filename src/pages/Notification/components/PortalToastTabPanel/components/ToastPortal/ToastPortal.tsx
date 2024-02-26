@@ -1,6 +1,6 @@
 import { type FC, type ReactNode, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
-import { type TToastPlacement } from "@bee-q/core";
+import { type TToastPlacement } from "@beeq/core";
 import { PLACEMENTS } from "../../utils";
 
 export interface ToastPortalProps {
