@@ -7,7 +7,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:typescript-sort-keys/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
@@ -17,7 +16,6 @@ module.exports = {
   plugins: [
     "react-refresh",
     "sort-keys-plus",
-    "typescript-sort-keys",
     "sort-destructure-keys",
     "unused-imports",
     "simple-import-sort",
