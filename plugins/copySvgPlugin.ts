@@ -20,6 +20,9 @@ export const copySvgPlugin: () => PluginOption = () => ({
       "spinner-gap",
       "warning",
       "keyboard",
+      "frame-corners",
+      "plus",
+      "minus",
     ];
 
     await Promise.all(

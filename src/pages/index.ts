@@ -1,3 +1,4 @@
+import { Accordion } from "./Accordion";
 import { Dialog } from "./Dialog";
 import { Form } from "./Form";
 import { Home } from "./Home";
@@ -27,5 +28,11 @@ export const ROUTES = [
     icon: "keyboard",
     name: "Form",
     path: "/form",
+  },
+  {
+    component: Accordion,
+    icon: "frame-corners",
+    name: "Accordion",
+    path: "/accordion",
   },
 ] as const;
