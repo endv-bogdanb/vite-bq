@@ -14,7 +14,7 @@ export const SideLayout: FC<SideLayoutProps> = ({ children }) => {
   return (
     <>
       <BqSideMenu>
-        <h1 slot="logo">{appVersion}</h1>
+        <h2 slot="logo">{appVersion}</h2>
         {ROUTES.map((route) => (
           <SideLayoutItem key={route.path} route={route} />
         ))}

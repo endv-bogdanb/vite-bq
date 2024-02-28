@@ -11,7 +11,7 @@ export const SideLayoutItem: FC<SideLayoutItemProps> = ({ route }) => {
   const [active] = useRoute(route.path);
 
   return (
-    <Link to={route.path}>
+    <Link to={route.path} asChild>
       <BqSideMenuItem active={active}>
         <BqIcon name={route.icon} slot="prefix" />
         {route.name}
