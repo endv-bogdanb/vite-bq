@@ -2,6 +2,7 @@ import { type FC, type ReactNode } from "react";
 import { BqSideMenu } from "@beeq/react";
 import { useAppVersion } from "@/hooks";
 import { ROUTES } from "@/pages";
+import { Container } from "..";
 import { SideLayoutItem } from "./components";
 
 export interface SideLayoutProps {
@@ -19,7 +20,7 @@ export const SideLayout: FC<SideLayoutProps> = ({ children }) => {
           <SideLayoutItem key={route.path} route={route} />
         ))}
       </BqSideMenu>
-      {children}
+      <Container>{children}</Container>
     </>
   );
 };

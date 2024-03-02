@@ -1,5 +1,5 @@
 import { type FC, StrictMode } from "react";
-import { Route, Router, Switch } from "wouter";
+import { Redirect, Route, Router, Switch } from "wouter";
 import { SideLayout } from "@/components";
 import { ROUTES } from "@/pages";
 
@@ -14,8 +14,12 @@ export const App: FC = () => {
                 key={route.path}
                 path={route.path}
                 component={route.component}
+                nest={route.nest}
               />
             ))}
+            <Route>
+              <Redirect to={ROUTES[0].path} />
+            </Route>
           </Switch>
         </SideLayout>
       </Router>

@@ -1,7 +1,7 @@
 import { type FC, useState } from "react";
 import { BqTab, BqTabGroup } from "@beeq/react";
-import { TabPanel } from "@/components";
-import { RefDialogTabPanel, StateDialogTabPanel } from "./components";
+import { Container, Show } from "@/components";
+import { RefDialogTab, StateDialogTab } from "./components";
 
 export const Dialog: FC = () => {
   const [activeTabId, setActiveTabId] = useState<string>("ref-dialog");
@@ -21,12 +21,13 @@ export const Dialog: FC = () => {
           State Dialog
         </BqTab>
       </BqTabGroup>
-      <TabPanel activeTabId={activeTabId} tabId="ref-dialog">
-        <RefDialogTabPanel />
-      </TabPanel>
-      <TabPanel activeTabId={activeTabId} tabId="state-dialog">
-        <StateDialogTabPanel />
-      </TabPanel>
+      <Container>
+        <Show show={activeTabId === "ref-dialog"} component={RefDialogTab} />
+        <Show
+          show={activeTabId === "state-dialog"}
+          component={StateDialogTab}
+        />
+      </Container>
     </>
   );
 };

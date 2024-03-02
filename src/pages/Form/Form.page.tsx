@@ -1,8 +1,8 @@
 import { type FC, useState } from "react";
 import { BqTab, BqTabGroup } from "@beeq/react";
-import { TabPanel } from "@/components";
-import { FormikFormTabPanel } from "./components";
-import { HookFormTabPanel } from "./components/HookFormTabPanel";
+import { Container, Show } from "@/components";
+import { FormikFormTab } from "./components";
+import { HookFormTab } from "./components/HookFormTab";
 
 export const Form: FC = () => {
   const [activeTabId, setActiveTabId] = useState<string>("hook-form");
@@ -22,12 +22,10 @@ export const Form: FC = () => {
           Formik form
         </BqTab>
       </BqTabGroup>
-      <TabPanel activeTabId={activeTabId} tabId="hook-form">
-        <HookFormTabPanel />
-      </TabPanel>
-      <TabPanel activeTabId={activeTabId} tabId="formik-form">
-        <FormikFormTabPanel />
-      </TabPanel>
+      <Container>
+        <Show show={activeTabId === "hook-form"} component={HookFormTab} />
+        <Show show={activeTabId === "formik-form"} component={FormikFormTab} />
+      </Container>
     </>
   );
 };
