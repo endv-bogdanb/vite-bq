@@ -1,5 +1,6 @@
 import { type FC } from "react";
 import { BqAccordion, BqAccordionGroup, BqSwitch } from "@beeq/react";
+import { Container } from "@/components";
 import { useBoolean } from "@/hooks";
 
 export const Accordion: FC = () => {
@@ -7,7 +8,7 @@ export const Accordion: FC = () => {
   const [expandAll, { toggle: toggleexpandAll }] = useBoolean();
 
   return (
-    <>
+    <Container>
       <BqSwitch name="multiple" onBqChange={toggleMultiple}>
         multiple
       </BqSwitch>
@@ -55,6 +56,6 @@ export const Accordion: FC = () => {
           including versions of Lorem Ipsum.
         </BqAccordion>
       </BqAccordionGroup>
-    </>
+    </Container>
   );
 };

@@ -1,7 +1,7 @@
 import { type FC, useState } from "react";
 import { BqTab, BqTabGroup } from "@beeq/react";
-import { TabPanel } from "@/components";
-import { BreadcrumbsTabPanel, ButtonTabPanel } from "./components";
+import { Container, Hide, Show } from "@/components";
+import { BreadcrumbsTab, ButtonTab } from "./components";
 
 export const Home: FC = () => {
   const [activeTabId, setActiveTabId] = useState<string>("button");
@@ -21,16 +21,16 @@ export const Home: FC = () => {
           Breadcrumbs
         </BqTab>
       </BqTabGroup>
-      <TabPanel activeTabId={activeTabId} tabId="button">
-        <ButtonTabPanel />
-      </TabPanel>
-      <TabPanel activeTabId={activeTabId} tabId="breadcrumbs">
-        <BreadcrumbsTabPanel
+      <Container>
+        <Hide hide={activeTabId !== "button"} component={ButtonTab} />
+        <Show
+          show={activeTabId === "breadcrumbs"}
+          component={BreadcrumbsTab}
           onBack={() => {
             setActiveTabId("button");
           }}
         />
-      </TabPanel>
+      </Container>
     </>
   );
 };

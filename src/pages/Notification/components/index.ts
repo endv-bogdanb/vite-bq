@@ -1,3 +1,3 @@
-export * from "./CreateElementNotificationTabPanel";
-export * from "./PortalNotificationTabPanel";
-export * from "./PortalToastTabPanel";
+export * from "./CreateElementNotificationTab";
+export * from "./PortalNotificationTab";
+export * from "./PortalToastTab";

@@ -1,10 +1,10 @@
 import { type FC, useState } from "react";
 import { BqTab, BqTabGroup } from "@beeq/react";
-import { TabPanel } from "@/components";
+import { Container, Show } from "@/components";
 import {
-  CreateElementNotificationTabPanel,
-  PortalNotificationTabPanel,
-  PortalToastTabPanel,
+  CreateElementNotificationTab,
+  PortalNotificationTab,
+  PortalToastTab,
 } from "./components";
 
 export const Notification: FC = () => {
@@ -28,15 +28,20 @@ export const Notification: FC = () => {
           Portal toast
         </BqTab>
       </BqTabGroup>
-      <TabPanel activeTabId={activeTabId} tabId="portal-notification">
-        <PortalNotificationTabPanel />
-      </TabPanel>
-      <TabPanel activeTabId={activeTabId} tabId="create-element-notification">
-        <CreateElementNotificationTabPanel />
-      </TabPanel>
-      <TabPanel activeTabId={activeTabId} tabId="portal-toast">
-        <PortalToastTabPanel />
-      </TabPanel>
+      <Container>
+        <Show
+          show={activeTabId === "portal-notification"}
+          component={PortalNotificationTab}
+        />
+        <Show
+          show={activeTabId === "create-element-notification"}
+          component={CreateElementNotificationTab}
+        />
+        <Show
+          show={activeTabId === "portal-toast"}
+          component={PortalToastTab}
+        />
+      </Container>
     </>
   );
 };
