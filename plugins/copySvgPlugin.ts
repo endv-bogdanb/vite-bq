@@ -30,8 +30,8 @@ export const copySvgPlugin: () => PluginOption = () => ({
         .map((svg) => {
           return weight.map((weight) => {
             const ext = `${svg}${weight === "regular" ? "" : `-${weight}`}.svg`;
-            const src = `node_modules/@beeq/core/dist/beeq/svg/${weight}/${ext}`;
-            const dest = `public/svg/${weight}/${ext}`;
+            const src = `node_modules/@beeq/core/dist/beeq/svg/${ext}`;
+            const dest = `public/svg/${ext}`;
             return cp(src, dest, { recursive: true });
           });
         })
