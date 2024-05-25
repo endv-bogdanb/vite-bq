@@ -23,6 +23,7 @@ export const copySvgPlugin: () => PluginOption = () => ({
       "frame-corners",
       "plus",
       "minus",
+      "caret-down",
     ];
 
     await Promise.all(
