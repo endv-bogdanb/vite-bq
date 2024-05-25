@@ -1,16 +1,16 @@
 import { type ComponentType } from "react";
 
 export type ShowProps<T extends NonNullable<unknown>> = {
-  show: boolean;
+  when: boolean;
   component: ComponentType<T>;
 } & T;
 
 export const Show = <T extends NonNullable<unknown>>({
   component: Component,
-  show,
+  when,
   ...props
 }: ShowProps<T>) => {
-  if (!show) {
+  if (!when) {
     return null;
   } else {
     return <Component {...(props as unknown as T)} />;

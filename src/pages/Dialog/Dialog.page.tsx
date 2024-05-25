@@ -22,9 +22,9 @@ export const Dialog: FC = () => {
         </BqTab>
       </BqTabGroup>
       <Container>
-        <Show show={activeTabId === "ref-dialog"} component={RefDialogTab} />
+        <Show when={activeTabId === "ref-dialog"} component={RefDialogTab} />
         <Show
-          show={activeTabId === "state-dialog"}
+          when={activeTabId === "state-dialog"}
           component={StateDialogTab}
         />
       </Container>

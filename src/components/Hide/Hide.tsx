@@ -2,16 +2,16 @@ import { type ComponentType } from "react";
 import { Show } from "..";
 
 export type HideProps<T extends NonNullable<unknown>> = {
-  hide: boolean;
+  when: boolean;
   component: ComponentType<T>;
 } & T;
 
 export const Hide = <T extends NonNullable<unknown>>({
   component: Component,
-  hide,
+  when,
   ...props
 }: HideProps<T>) => {
   return (
-    <Show show={!hide} component={Component} {...(props as unknown as T)} />
+    <Show when={!when} component={Component} {...(props as unknown as T)} />
   );
 };

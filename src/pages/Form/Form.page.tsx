@@ -23,8 +23,8 @@ export const Form: FC = () => {
         </BqTab>
       </BqTabGroup>
       <Container>
-        <Show show={activeTabId === "hook-form"} component={HookFormTab} />
-        <Show show={activeTabId === "formik-form"} component={FormikFormTab} />
+        <Show when={activeTabId === "hook-form"} component={HookFormTab} />
+        <Show when={activeTabId === "formik-form"} component={FormikFormTab} />
       </Container>
     </>
   );

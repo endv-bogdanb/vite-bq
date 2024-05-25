@@ -30,15 +30,15 @@ export const Notification: FC = () => {
       </BqTabGroup>
       <Container>
         <Show
-          show={activeTabId === "portal-notification"}
+          when={activeTabId === "portal-notification"}
           component={PortalNotificationTab}
         />
         <Show
-          show={activeTabId === "create-element-notification"}
+          when={activeTabId === "create-element-notification"}
           component={CreateElementNotificationTab}
         />
         <Show
-          show={activeTabId === "portal-toast"}
+          when={activeTabId === "portal-toast"}
           component={PortalToastTab}
         />
       </Container>

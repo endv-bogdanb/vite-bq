@@ -22,9 +22,9 @@ export const Home: FC = () => {
         </BqTab>
       </BqTabGroup>
       <Container>
-        <Hide hide={activeTabId !== "button"} component={ButtonTab} />
+        <Hide when={activeTabId !== "button"} component={ButtonTab} />
         <Show
-          show={activeTabId === "breadcrumbs"}
+          when={activeTabId === "breadcrumbs"}
           component={BreadcrumbsTab}
           onBack={() => {
             setActiveTabId("button");
