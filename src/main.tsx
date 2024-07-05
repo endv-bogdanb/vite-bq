@@ -5,6 +5,8 @@ import { App } from "./App.tsx";
 
 setBasePath(`/vite-bq`);
 
+console.log("ME HERE?!");
+
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 root.render(<App />);

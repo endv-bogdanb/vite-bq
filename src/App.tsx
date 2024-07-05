@@ -4,9 +4,10 @@ import { SideLayout } from "@/components";
 import { ROUTES } from "@/pages";
 
 export const App: FC = () => {
+  console.log("me here");
   return (
     <StrictMode>
-      <Router base="/vite-bq">
+      <Router>
         <SideLayout>
           <Switch>
             {Object.values(ROUTES).map((route) => (

@@ -7,7 +7,6 @@ import { versionPlugin } from "./plugins/versionPlugin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/vite-bq/",
   plugins: [
     react(),
     copySvgPlugin(),
