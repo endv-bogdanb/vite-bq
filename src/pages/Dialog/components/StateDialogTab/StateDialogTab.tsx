@@ -36,7 +36,6 @@ export const StateDialogTab: FC = () => {
             color="icon--danger"
             role="img"
             title="Danger"
-            weight="regular"
             class="hydrated"
           />
           Deactivate account
