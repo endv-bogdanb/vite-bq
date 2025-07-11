@@ -12,7 +12,7 @@ export interface SelectFieldProps<
   TFieldValues extends FieldValues,
   TName extends FieldPath<TFieldValues>,
 > extends UseControllerProps<TFieldValues, TName>,
-    Omit<JSX.BqSelect, "name"> {
+    Omit<JSX.BqSelect, "name" | "onBqInput"> {
   children: ReactNode;
   label: string;
 }
