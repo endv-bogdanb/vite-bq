@@ -11,11 +11,11 @@ export const BreadcrumbsTab: FC<BreadcrumbsTabProps> = ({ onBack: back }) => {
   return (
     <div>
       <BqBreadcrumb>
-        <Link to={ROUTES[1].path}>
-          <BqBreadcrumbItem>
+        <BqBreadcrumbItem>
+          <Link to={ROUTES[1].path} asChild>
             <BqIcon name="picture-in-picture" size="16"></BqIcon>
-          </BqBreadcrumbItem>
-        </Link>
+          </Link>
+        </BqBreadcrumbItem>
         <BqBreadcrumbItem onBqClick={back}>Buttons</BqBreadcrumbItem>
         <BqBreadcrumbItem>Breadcrumbs</BqBreadcrumbItem>
       </BqBreadcrumb>
