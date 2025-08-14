@@ -3,6 +3,7 @@ import { Dialog } from "./Dialog";
 import { Form } from "./Form";
 import { Home } from "./Home";
 import { Notification } from "./Notification";
+import { Table } from "./Table";
 
 export const ROUTES = [
   {
@@ -39,5 +40,12 @@ export const ROUTES = [
     name: "Accordion",
     nest: false,
     path: "/accordion",
+  },
+  {
+    component: Table,
+    icon: "rows",
+    name: "Table",
+    nest: false,
+    path: "/table",
   },
 ] as const;
