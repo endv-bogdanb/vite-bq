@@ -24,6 +24,12 @@ export const copySvgPlugin: () => PluginOption = () => ({
       "plus",
       "minus",
       "caret-down",
+      "rows",
+      "arrow-left",
+      "arrow-right",
+      "arrow-up",
+      "arrow-down",
+      "arrows-down-up",
     ];
 
     await Promise.all(

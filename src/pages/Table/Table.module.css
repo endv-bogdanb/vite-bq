@@ -1,0 +1,24 @@
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--bq-spacing-xs);
+    padding-inline: var(--bq-spacing-xs);
+    padding-block: var(--bq-spacing-s);
+}
+
+.header {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header.pointer {
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline: var(--bq-spacing-xs);
+}
