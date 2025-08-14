@@ -36,7 +36,6 @@ export const StateDialogTab: FC = () => {
             color="icon--danger"
             role="img"
             title="Danger"
-            class="hydrated"
           />
           Deactivate account
         </h3>
@@ -54,7 +53,6 @@ export const StateDialogTab: FC = () => {
             size="medium"
             type="button"
             variant="standard"
-            class="hydrated"
             onBqClick={hide}
           >
             Cancel
@@ -65,7 +63,6 @@ export const StateDialogTab: FC = () => {
             justify-content="center"
             size="medium"
             type="button"
-            class="hydrated"
             onBqClick={hide}
           >
             Yes, deactive

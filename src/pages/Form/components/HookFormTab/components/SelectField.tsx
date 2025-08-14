@@ -1,18 +1,17 @@
-import { type ReactNode } from "react";
+import { type ComponentProps, type ReactNode } from "react";
 import {
   type FieldPath,
   type FieldValues,
   useController,
   type UseControllerProps,
 } from "react-hook-form";
-import { type JSX } from "@beeq/core";
 import { BqSelect } from "@beeq/react";
 
 export interface SelectFieldProps<
   TFieldValues extends FieldValues,
   TName extends FieldPath<TFieldValues>,
 > extends UseControllerProps<TFieldValues, TName>,
-    Omit<JSX.BqSelect, "name"> {
+    Omit<ComponentProps<typeof BqSelect>, "name" | "defaultValue"> {
   children: ReactNode;
   label: string;
 }
